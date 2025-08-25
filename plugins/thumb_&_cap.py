@@ -43,4 +43,4 @@ async def removethumb(client, message):
 async def addthumbs(client, message):
     mkn = await message.reply_text("Please Wait ...")
     await codeflixbots.set_thumbnail(message.from_user.id, file_id=message.photo.file_id)                
-    await mkn.edit("**Thumbnail Saved Successfully ✅️**")
+    await mkn.edit("**Thumbnail Saved Successfully ✅️ Thx @World_Fastest_Bots**")
