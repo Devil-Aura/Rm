@@ -13,7 +13,7 @@ import os
 from flask import Flask, jsonify
 import time
 
-pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
+pyrogram.utils.MIN_CHANNEL_ID = -1003058967184
 
 # Create Flask app
 flask_app = Flask(__name__)
@@ -27,7 +27,7 @@ def run_flask():
 
 
 # Setting SUPPORT_CHAT directly here
-SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", "-1002461902196"))
+SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", "-1003058967184"))
 
 PORT = Config.PORT
 
@@ -73,12 +73,12 @@ class Bot(Client):
                     chat_id=chat_id,
                     photo=Config.START_PIC,
                     caption=(
-                        "**Dᴀɴᴛᴇ ɪs ʀᴇsᴛᴀʀᴛᴇᴅ ᴀɢᴀɪɴ  !**\n\n"
+                        "**@World_Fastest_Bots ɪs ʀᴇsᴛᴀʀᴛᴇᴅ ᴀɢᴀɪɴ  !**\n\n"
                         f"ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​: `{uptime_string}`"
                     ),
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/weebs_talk_station")
+                            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/World_Fastest_Bots")
                         ]]
                     )
                 )
