@@ -194,7 +194,7 @@ async def cb_handler(client, query: CallbackQuery):
 @Client.on_message(filters.command("donate"))
 async def donation(client, message):
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url='https://t.me/sewxiy')]
+        [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url='https://t.me/World_Fastest_Bots')]
     ])
     yt = await message.reply_photo(photo='https://t.me/World_Fastest_Bots', caption=Txt.DONATE_TXT, reply_markup=buttons)
     await asyncio.sleep(300)
@@ -217,7 +217,7 @@ async def getpremium(bot, message):
 @Client.on_message(filters.command("plan"))
 async def premium(bot, message):
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton("sᴇɴᴅ ss", url="https://t.me/IntrovertSama"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+        [InlineKeyboardButton("sᴇɴᴅ ss", url="https://t.me/World_Fastest_Bots"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
     ])
     yt = await message.reply_photo(photo='https://i.ibb.co/S7vgk8Hj/c8d9f3039813.jpg', caption=Txt.PREPLANS_TXT, reply_markup=buttons)
     await asyncio.sleep(300)
