@@ -13,7 +13,7 @@ import os
 from flask import Flask, jsonify
 import time
 
-pyrogram.utils.MIN_CHANNEL_ID = -1003058967184
+pyrogram.utils.MIN_CHANNEL_ID = -1003058967194
 
 # Create Flask app
 flask_app = Flask(__name__)
@@ -27,7 +27,7 @@ def run_flask():
 
 
 # Setting SUPPORT_CHAT directly here
-SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", "-1003058967184"))
+SUPPORT_CHAT = int(os.environ.get("SUPPORT_CHAT", "-1002432405855"))
 
 PORT = Config.PORT
 
