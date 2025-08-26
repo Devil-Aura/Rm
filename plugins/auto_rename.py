@@ -13,7 +13,7 @@ async def auto_rename_command(client, message):
         return await message.reply_text(
             "❌ **Premium Feature** ❌\n\n"
             "File renaming is a premium feature.\n"
-            "Contact @introvertsama to rename files."
+            "Contact @World_Fastest_Bots to rename files."
         )
 
     # Extract and validate the format from the command
@@ -52,7 +52,7 @@ async def set_media_command(client, message):
         return await message.reply_text(
             "❌ **Premium Feature** ❌\n\n"
             "Media type selection is a premium feature.\n"
-            "Contact @introvertsama to get premium access."
+            "Contact @World_Fastest_Bots to get premium access."
         )
         
     keyboard = InlineKeyboardMarkup([
@@ -81,7 +81,7 @@ async def handle_media_selection(client, callback_query: CallbackQuery):
         return await callback_query.message.edit_text(
             "❌ **Premium Feature** ❌\n\n"
             "Media type selection is a premium feature.\n"
-            "Contact @introvertsama to get premium access."
+            "Contact @World_Fastest_Bots to get premium access."
         )
         
     media_type = callback_query.data.split("_", 1)[1].capitalize()  # Extract and capitalize media type
