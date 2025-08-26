@@ -198,7 +198,7 @@ async def auto_rename_files(client, message):
         return await message.reply_text(
             "❌ **Premium Feature** ❌\n\n"
             "File renaming is a premium feature.\n"
-            "Contact @introvertsama to rename files."
+            "Contact @World_Fastest_Bots to rename files."
         )
     
     # Skip if user is in sequence mode
