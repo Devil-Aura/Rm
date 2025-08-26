@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "28614709")
-    API_HASH  = os.environ.get("API_HASH", "f36fd2ee6e3d3a17c4d244ff6dc1bac8")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7540338860:AAFSgM-h827cvQg0E8XQ-I--W-kjPqfKgyg") 
+    API_ID    = os.environ.get("API_ID", "22768311")
+    API_HASH  = os.environ.get("API_HASH", "702d8884f48b42e865425391432b3794")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","Station")     
@@ -19,9 +19,9 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/255a7bf3992c1bfb4b78a-03d5d005ec6812a81d.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002669902570"))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", "7970350353"))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002669902570"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003058967184"))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER", "6040503076"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1003058967184"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
