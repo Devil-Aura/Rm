@@ -10,15 +10,15 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Station")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://fahima3026:jcFNxH3BeMcx2A7E@cluster0.dzewi4o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     PORT = os.environ.get("PORT", "2340")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/255a7bf3992c1bfb4b78a-03d5d005ec6812a81d.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '').split(',')
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5469101870').split()]
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '-1002432405855').split(',')
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003058967184"))
     BOT_OWNER = int(os.environ.get("BOT_OWNER", "6040503076"))
     DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1003058967184"))
