@@ -17,7 +17,7 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://envs.sh/tCB.jpg/IMG20250826446.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5469101870').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5469101870''6040503076').split()]
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '-1002432405855').split(',')
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003058967184"))
     BOT_OWNER = int(os.environ.get("BOT_OWNER", "6040503076"))
